@@ -1,0 +1,50 @@
+TIDAL:
+
+Job Tidal - Connection status monitor has Completed Abnormally
+Agent: lrk1wnarbbat03
+Exit Code: 1
+Error: 
+
+Start: 4:24:44 ; Finish: 4:24:46
+
+Output:
+*************************************
+Status Monitor
+*************************************
+Retrieving input parameters
+Validating input parameters
+Loading connection configuration file: D:\JobApps\Wildcard_DataCenter\Generic_Status\INI\Tidal_Connection_serverconfig.ini
+->Loading configuration file: D:\JobApps\Wildcard_DataCenter\Generic_Status\INI\Tidal_Connection_statusconfig.ini
+->Configuration file loaded successfully
+Connection configuration file loaded successfully
+*************************************
+Connecting to 10.236.46.71
+Getting Status information
+Loading SQL Query file: D:\JobApps\Wildcard_DataCenter\Generic_Status\Queries\Tidal_Connection.sql
+Status information retrieved
+Disconnecting from 10.236.46.71
+*************************************
+Current Status:
+Status                        Count               Server                        
+TES_LRK1WNARTESWB01           13                  L1WNARTDLSQ01B                
+tidal_LRK1WNARTESAP01         21                  L1WNARTDLSQ01B                
+tidal_LRK1WNARTESAP02         20                  L1WNARTDLSQ01B                
+
+*************************************
+Checking Tidal Connection status for 10.236.46.71
+
+Checking status for 'TES_LRK1WNARTESWB01'
+ERROR: 13 records found for the status 'TES_LRK1WNARTESWB01' minimum should be 14
+Status check complete
+*************************************
+Checking status for 'tidal_LRK1WNARTESAP01'
+Status check complete
+*************************************
+Checking status for 'tidal_LRK1WNARTESAP02'
+Status check complete
+*************************************
+Sending email alert
+Email sent successfully
+*************************************
+Exit: 1 errors
+*************************************
